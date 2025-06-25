@@ -61,7 +61,7 @@ log_command_info "Configuring alacritty config..."
 mkdir -p /home/$(logname)/.config/alacritty
 # STARTOF: cloning themes for alacritty
 mkdir -p /home/$(logname)/.config/alacritty/themes
-git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+git clone https://github.com/alacritty/alacritty-theme /home/$(logname)/.config/alacritty/themes
 # ENDOF: cloning themes for alacritty
 cat > /home/$(logname)/.config/alacritty/alacritty.toml <<EOF
 [general]
