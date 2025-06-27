@@ -16,6 +16,7 @@ check_success() {
     else
         echo -e "${GREEN}$1 successful${NC}"
     fi
+    sleep 5
 }
 
 
@@ -46,7 +47,7 @@ check_success "AMD driver installation"
 
 # install mandatory packages
 log_command_info "Installing mandatory packages..."
-pacman -S --noconfirm --needed fastfetch flatpak micro telegram-desktop btop rocm-smi-lib alacritty steam openrgb vscode
+pacman -S --noconfirm --needed fastfetch flatpak micro telegram-desktop btop alacritty steam openrgb vscode obs-studio
 check_success "Mandatory packages installation"
 
 
